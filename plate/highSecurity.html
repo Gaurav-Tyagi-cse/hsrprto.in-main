@@ -1,0 +1,1105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/dashboard/assets/media/logos/Favicon.png" />
+	<title>Book Your High-Security Number Plate</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9799370626617756"
+     crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+	<!-- Select2 Bootstrap4 Theme CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/frontend/css/style.css">
+</head>
+<body>
+	<header class="header-1">
+		<nav class="navbar navbar-expand-lg ">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="/"><img src="/frontend/images/logo.svg" class="img-fluid"></a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+		      <ul class="navbar-nav ">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="/orderTracking">Track Your Order</a>
+		        </li>
+		        <!-- <li class="nav-item">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="shortcut icon" href="/frontend/images/fav.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/frontend/css/style.css" />
+  </head>
+  <body>
+    <header class="header-1">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="/frontend/images/logo.svg" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/orderTracking"
+                  >Track Your Order</a
+                >
+              </li>
+              <li class="nav-item">
+		          <a class="nav-link" href="/reAppointment">Reschedule Appointment</a>
+		        </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="/orderCancel">Cancel Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="/downloadReceipt">Reprint Receipt</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+		           <a class="nav-link" href="/receiptValidity">Receipt Validity</a>		          
+		        </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="/contactUs">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<style>
+.select2:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 5px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.error {
+    color: #DC3545;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8px;
+    position: relative;
+    top: 4px;
+}
+input.fieldrequired, select.fieldrequired {
+    border-color: #DC3545;
+}
+</style>
+
+<style>
+   .error{
+      color: #DC3545;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 8px;
+position: relative;
+top: 4px;
+   }
+   .step1_err, .step2_err, .step3_err{
+   display: none;
+   }
+   input.fieldrequired, select.fieldrequired{
+      border-color:  #DC3545;
+   }
+</style>
+<section>
+   <div class="form">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+            <div class="main-sidebar">
+               <div class="steps-content">
+                  <h3> <span class="step-number"></span></h3>
+                  <p class="step-number-content active"></p>
+                  <p class="step-number-content d-none"></p>
+                  <p class="step-number-content d-none"></p>
+                  <p class="step-number-content d-none"></p>
+               </div>
+               <div class="left-side">
+                  <ul class="progress-bar ">
+                     <li class="active step1_bar pro-bar">Step 1 - Booking Details</li>
+                     <li class="step2_bar">Step 2 - Booking summary</li>
+                     <li class="step3_bar">Step 3 - Verify Details & Pay</li>
+                     <li class="step4_bar">Step 4 - Order Confirmation</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+            <div class="right-side pb-0">
+               <div class="interlink">
+                  <a href="/">Home</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                     <path d="M7.29035 5.99892C7.29035 6.50062 7.07628 6.9798 6.70315 7.31449L2.37732 11.5767C1.94188 11.9757 1.35998 12.0718 0.841705 11.8431C0.322764 11.6145 -3.68977e-08 11.1207 -6.16672e-08 10.5541L-4.59862e-07 1.44443C-4.84602e-07 0.878437 0.322101 0.384018 0.841041 0.156029C1.35998 -0.0719605 1.94122 0.0234765 2.35942 0.405226L6.72635 4.70455C7.07628 5.0187 7.29035 5.49787 7.29035 5.99892Z" fill="#30BE9F"/>
+                  </svg>
+                  <span>High Security Registration Plate</span> 
+               </div>
+               <div class="main step1 active   ">
+                  <!-- Vehicle Details Enter Section Start -->
+                  <div class="">
+                     <small><i class="fa fa-smile-o"></i></small>
+                     <div class="mbl-steps">1/4</div>
+                     <div class="text">
+                        <h2>Booking Details</h2>
+                        <p>Please fill in the details below so that we can get in contact with you about our product.</p>
+                        <h4>Contact Information</h4>
+                     </div>
+                     <div class="row com-form mt-3">
+                        <div class="col-md-6">
+                           <label for="" class="form-label"> Name* </label>
+                           <input type="text" class="form-control formdatas" name="customerName" id="customerName" placeholder="Enter Owner Name">
+                           <span class="error step2_err customerName_err"> Please Enter Owner Name</span>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Mobile No* </label>
+                           <input type="text" class="form-control formdatas" id="mobileNo" placeholder="Enter Mobile Number">
+                           <span class="error step2_err mobileNo_err"> Please Enter Mobile Number</span>
+                        </div>
+                     </div>
+                     <div class="row  com-form">
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Email ID* </label>
+                           <input type="text" class="form-control formdatas" name="emailAddress" id="emailAddress" placeholder="Enter Email ID">
+                           <span class="error step2_err emailAddress_err"> Please Enter Email ID</span>
+                        </div>
+                     </div>
+                     <div class="row  com-form ">
+                        <div class="col-md-12">
+                           <div class="text mb-3 pt-2  ">
+                              <h4>Vehicle Details</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row  com-form ">
+                        
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Vehicle Reg No* </label>
+                           <input type="text" class="form-control formdatas" name="vehicleRegNo" id="vehicleRegNo" placeholder="Enter Vehicle Reg No">
+                           <span class="error step1_err vehicleregno_err"> (Reg No. Ex.- DLXXXXX01)</span>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                                                
+                     </div>
+                     <div class="row  com-form ">
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Service Type* </label>
+                           <select name="serviceType" class="formdatas" id="serviceType">
+                              
+                                 
+                                   <option value="1">High Security Color Sticker</option>
+                                 
+                                   <option value="2">Replacement</option>
+                                 
+                                   <option value="3">High Security Electric Vehicle</option>
+                                 
+                                   <option value="4">Color Sticker</option>
+                                 
+                                   <option value="5">High Security Tractor</option>
+                                 
+                               
+                           </select>
+                           <span class="error step2_err serviceType"> Please Select Service Type</span>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Chassis No* (XXXXX12345) </label>
+                           <input type="text" class="form-control formdatas" name="chassisNo" id="chassisNo" placeholder="Enter Chassis No">
+                           <span class="error step1_err chassisno_err"> (Kindly enter last 5 digits)</span>
+                        </div>
+                        
+                     </div>
+                     <div class="row  com-form ">
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Engine No/Motor No* (XXXXX12345) </label>
+                           <input type="text" class="form-control formdatas" id="engineNo" name="engineNo" placeholder="Enter Engine No">
+                           <span class="error step1_err engineno_err"> (Kindly enter last 5 digits)</span>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Vehicle Type* </label>
+                           <select name="vehicleType" class="formdatas" id="vehicleType">
+                              <option value="">Select Vehicle Type</option>
+                              
+                                 
+                                   <option value="1">Two Wheeler</option>
+                                 
+                                   <option value="2">Three Wheeler</option>
+                                 
+                                   <option value="3">Four Wheeler</option>
+                                 
+                                   <option value="4">Heavy</option>
+                                 
+                                   <option value="5">Electric Vehicle</option>
+                                 
+                               
+                           </select>
+                           <span class="error step2_err vehicleType_err"> Please Select Vehicle Type</span>
+                        </div>
+                     </div>
+                     <div class="row  com-form ">
+                        
+                        <div class="col-md-6">
+                           <label for="" class="form-label">State* </label>
+                           <select class="form-control select2 formdatas" name="vehicleState" id="vehicleState" style="width: 100%;" >
+                              <option value="">Select State</option>
+                              
+                                
+                                  <option value="Andhra Pradesh">ANDHRA PRADESH</option>
+                                
+                                  <option value="Arunachal Pradesh">ARUNACHAL PRADESH</option>
+                                
+                                  <option value="Assam">ASSAM</option>
+                                
+                                  <option value="Bihar">BIHAR</option>
+                                
+                                  <option value="Chhattisgarh">CHHATTISGARH</option>
+                                
+                                  <option value="Goa">GOA</option>
+                                
+                                  <option value="Gujarat">GUJARAT</option>
+                                
+                                  <option value="Haryana">HARYANA</option>
+                                
+                                  <option value="Himachal Pradesh">HIMACHAL PRADESH</option>
+                                
+                                  <option value="Jammu and Kashmir">JAMMU AND KASHMIR</option>
+                                
+                                  <option value="Jharkhand">JHARKHAND</option>
+                                
+                                  <option value="Karnataka">KARNATAKA</option>
+                                
+                                  <option value="Kerala">KERALA</option>
+                                
+                                  <option value="Madhya Pradesh">MADHYA PRADESH</option>
+                                
+                                  <option value="Maharashtra">MAHARASHTRA</option>
+                                
+                                  <option value="Manipur">MANIPUR</option>
+                                
+                                  <option value="Meghalaya">MEGHALAYA</option>
+                                
+                                  <option value="Mizoram">MIZORAM</option>
+                                
+                                  <option value="Nagaland">NAGALAND</option>
+                                
+                                  <option value="Odisha">ODISHA</option>
+                                
+                                  <option value="Punjab">PUNJAB</option>
+                                
+                                  <option value="Rajasthan">RAJASTHAN</option>
+                                
+                                  <option value="Sikkim">SIKKIM</option>
+                                
+                                  <option value="Tamil Nadu">TAMIL NADU</option>
+                                
+                                  <option value="Telangana">TELANGANA</option>
+                                
+                                  <option value="Tripura">TRIPURA</option>
+                                
+                                  <option value="Uttar Pradesh">UTTAR PRADESH</option>
+                                
+                                  <option value="Uttarakhand">UTTARAKHAND</option>
+                                
+                                  <option value="West Bengal">WEST BENGAL</option>
+                                
+                                  <option value="Andaman and Nicobar Islands">ANDAMAN AND NICOBAR</option>
+                                
+                                  <option value="Chandigarh">CHANDIGARH</option>
+                                
+                                  <option value="Dadra and Nagar Haveli and Daman and Diu">DADRA AND NAGAR HAVELI</option>
+                                
+                                  <option value="Lakshadweep">LAKSHADWEEP</option>
+                                
+                                  <option value="Delhi">DELHI</option>
+                                
+                                  <option value="Puducherry">PUDUCHERRY</option>
+                                
+                                  <option value="Ladakh">LADAKH</option>
+                                
+                              
+                            </select>
+                            <span class="error step1_err vehicleState_err"> Please Select State</span>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="" class="form-label">Pincode* </label>
+                           <input type="text" class="form-control formdatas" name="pincode" id="pincode" placeholder="Enter Pincode" >
+                           <span class="error step1_err pincode_err"> Please Enter Pincode</span>
+                        </div>
+                     </div>
+                     <div class="row com-form">
+                        <div class="col-md-12">
+                           <label for="" class="form-label">Delivery Address* </label>
+                           <textarea type="text" class="form-control formdatas" name="billingAddress" id="billingAddress" placeholder="Enter Billing Address" rows="3"></textarea>
+                           <span class="error step1_err billingAddress_err"> Please Enter Delivery Address</span>
+                        </div>
+                        
+                     </div>
+                     <div class="row  com-form align-items-center">
+                        <div class="col-md-12 d-flex gap-4 justify-content-end">
+                           <div class="buttons text-end mt-2">
+                              <button class="reset resetform">Reset</button>
+                           </div>
+                           <div class="buttons text-end mt-2">
+                              <button class="next_button step1_btn">Next Step</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main step2  ">
+                  <small><i class="fa fa-smile-o"></i></small>
+                  <div class="mbl-steps">2/4</div>
+                  <div class="text">
+                     <h2>Booking Summary</h2>
+                     <p>Please fill in the details below so that we can get in contact with you about our product.</p>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12 col-lg-7 col-xl-7">
+                        <div class="text mt-2">
+                           <h4>Vehicle  Information</h4>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-3">
+                              <div class="vehi-info">
+                                 <p>Reg No</p>
+                                 <h3 class="regNo_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-5">
+                              <div class="vehi-info">
+                                 <p>Chassis No</p>
+                                 <h3 class="chassisNo_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehi-info">
+                                 <p>Engine No</p>
+                                 <h3 class="engineNo_text"></h3>
+                              </div>
+                           </div>
+                           
+                           <div class="col-md-3">
+                              <div class="vehi-info">
+                                 <p>Vehicle Type</p>
+                                 <h3 class="vehicleType_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-5">
+                              <div class="vehi-info">
+                                 <p>Vehicle State</p>
+                                 <h3 class="vehicleState_text"></h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text mt-3">
+                           <h4>Billing Information</h4>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehi-info">
+                                 <p>Name</p>
+                                 <h3 class="customerName_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehi-info">
+                                 <p>Mobile Number</p>
+                                 <h3 class="mobileNo_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehi-info">
+                                 <p>Email ID</p>
+                                 <h3 class="emailAddress_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehi-info">
+                                 <p>Pincode</p>
+                                 <h3 class="pincode_text"></h3>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="vehi-info">
+                                 <p>Address</p>
+                                 <h3 class="billingaddress_text"></h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-5 text-center">
+                        <img src="/frontend/images/reg-plate-boy.png" class="img-fluid mt-minus-img">
+                     </div>
+                  </div>
+                  <div class="row  com-form align-items-center">
+                     <div class="col-md-12 d-flex gap-4 justify-content-end">
+                        <div class="buttons text-end mt-2">
+                           <button class="reset back_step1">Back</button>
+                        </div>
+                        <div class="buttons text-end mt-2">
+                           <button class="next_button step2_btn">Next Step</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main step3  mt-media  ">
+                  <div class="mbl-steps">3/4</div>
+                  <small><i class="fa fa-smile-o"></i></small>
+                  <div class="text">
+                     <h2>Verify Details & Pay</h2>
+                     <p>Please fill in the details below so that we can get in contact with you about our product.</p>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12 col-lg-6 col-xl-6">
+                        <div class="row verify-des-sec pb-4">
+                           <h3>Description</h3>
+                           <ul>
+                              <li>HSRP Cost (Included Fitment Cost) <span class="amountText">Rs. 300.00</span></li>
+                              <li>Total Cost<span><strong class="amountText"> Rs.300.00</strong></span></li>
+                           </ul>
+                        </div>
+                        <div class="col-md-12">
+							<div class="row com-form">
+								<label>Payment Screenshot * </label>
+								<input type="file" id="image" class="fileup formdatas">
+								<p>Note: File size max 1.5 MB, File type .jpg|.jpeg|.png|.pdf</p>
+                        <span class="error step4_err image_err"> Please upload payment screenshot</span>
+							 </div>
+							 <div class="row com-form">
+								 <label>Transaction ID* </label>
+								 <input type="text" id="transactionId" placeholder="Enter Payment Transaction ID">
+                         <span class="error step4_err transactionId_err formdatas"> Please Enter Transaction ID</span>
+							  </div>
+						</div>
+                     </div>
+                     <div class="col-md-12 col-lg-6 col-xl-6 ">
+                       <div class="upi-img">
+						         <img src="/frontend/images/950.jpg" class="img-fluid Two_Wheeler qrcode d-none">
+                           <img src="/frontend/images/1050.jpg" class="img-fluid Three_Wheeler qrcode d-none">
+                           <img src="/frontend/images/1250.jpg" class="img-fluid Four_Wheeler qrcode d-none">
+                           <img src="/frontend/images/1350.jpg" class="img-fluid Heavy qrcode d-none">
+                           <img src="/frontend/images/1450.jpg" class="img-fluid Electric_Vehicle qrcode d-none">
+					         </div>
+                     </div>
+                  </div>
+                  <div class="row  com-form align-items-center">
+                     <div class="col-md-12 d-flex gap-4 justify-content-end">
+                        <div class="buttons text-end mt-2">
+                           <button class="reset back_step3">Back</button>
+                        </div>
+                        <div class="buttons text-end mt-2">
+                           <button class="next_button step4_btn">
+                              <span class="bookingtext"> Pay Order </span>
+                              <span class="bookingindicator indicator-progress" style="display: none;">Please wait... 
+                                 <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                              </span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main step4    ">
+                  <small><i class="fa fa-smile-o"></i></small>
+				  <div class="mbl-steps">4/4</div>
+                  <div class="row row-reverse align-items-end">
+                     <div class="col-md-12 col-lg-7 col-xl-7">
+                        <div class="text">
+                           <h2>Order Confirmation</h2>
+                           <p>Please fill in the details below so that we can get in contact with you about our product.</p>
+                        </div>
+                        <div class="row order-conf align-items-center">
+                           <div class="col-2 col-sm-2 col-md-2 ">
+                              <img src="/frontend/images/success-icon.svg" class="img-fluid">
+                           </div>
+                           <div class="col-8 col-sm-10 col-md-10">
+                              <h4 class="orderNo_text"></h4>
+                              <p>Thankyou For Your Order {<span class="customerName_text"></span>}</p>
+                           </div>
+                        </div>
+                        <h3 class="order-info-head">Order Information</h3>
+                        <div class="order-info">
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Order ID <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3><strong class="orderNo_text"></strong></h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Order Date <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3><strong class="orderDate_text"></strong></h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Service Type  <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3><strong class="serviceType_text"></strong></h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Vehicle Type  <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3><strong class="vehicleType_text"></strong></h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Order Status  <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3 class="clr-blue"><strong class="orderStatus_text"></strong></h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Payment  <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3><strong class="amount_text"></strong></h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-5 col-sm-4 col-md-3">
+                                 <h3>Delivery Address  <span>:</span></h3>
+                              </div>
+                              <div class="col-7 col-sm-8 col-md-9">
+                                 <h3><strong class="billingaddress_text"></strong></h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="spe-note">
+                           <h4>Note:&nbsp;</h4>
+                           <h5>Once we receive the payment, we will begin working on your order. You can track your order <a class="trackorderlink" href="/orderTracking">Here.</a> </h5>
+                        </div>
+                     </div>
+					 <div class="col-md-5">
+						<div class="del-img">
+							<img src="/frontend/images/last-step-bg.svg" class="img-fluid">
+						</div>
+					 </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-list">
+					<ul>
+						<li><a href="/faq">FAQ</a></li>
+						<li><a href="/privacyPolicy">Privacy Policy</a></li>
+						<li><a href="/refundCancellation">Refund & Cancellation Policy</a></li>
+						<li><a href="/safeSecureTransactions">Safe & Secure Transaction</a></li>
+						<li><a href="/termsConditions">Terms & Conditions</a></li>
+						<li><a href="/governmentNotifications">Government Notifications</a></li>
+						<li><a href="/aboutUs">About HSRP</a></li>
+						<!-- <li><a href="/grievanceRedressal">Grievance Redressal</a></li> -->
+						<li><a href="/downloadReceipt">Reprint Receipt</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+$(document).ready(function() {
+	$('.select2').select2({
+		theme: 'bootstrap4',
+		allowClear: true,
+		tags: true,
+	});
+});
+</script>
+</body>
+</html>
+<script src="/frontend/js/axios.min.js"></script>
+<script type="text/javascript">
+  
+   $(document).ready(function() {
+   	const localStorestate = localStorage.getItem('state');
+      const localStorevehicleRegNo = localStorage.getItem('vehicleRegNo');
+      const localStoreengineNo = localStorage.getItem('engineNo');
+      const localStorechassisNo = localStorage.getItem('chassisNo');
+      if(localStorestate){
+         
+         $('#vehicleState').val(localStorestate).trigger('change');
+         localStorage.removeItem('state');
+      }
+      if(localStorevehicleRegNo){
+         $('#vehicleRegNo').val(localStorevehicleRegNo);
+         localStorage.removeItem('vehicleRegNo');
+      }
+      if(localStoreengineNo){
+         $('#engineNo').val(localStoreengineNo);
+         localStorage.removeItem('engineNo');
+      }
+      if(localStorechassisNo){
+         $('#chassisNo').val(localStorechassisNo);
+         localStorage.removeItem('chassisNo');
+      }
+   	// Captcha genrate function start
+   	function generateCaptcha() {
+         let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+         let captchaLength = 5;
+         let captcha = '';
+         for (let i = 0; i < captchaLength; i++) {
+            let randomIndex = Math.floor(Math.random() * chars.length);
+            captcha += chars[randomIndex];
+         }
+         return captcha;
+      }
+      $('.captchatext').text(generateCaptcha());
+   
+      $('.reloadCaptcha').click(function(e) {
+         e.preventDefault();
+         $('.captchatext').text(generateCaptcha());
+      });
+   	// Captcha genrate function end
+   
+      // step1 form 
+      hideErrorOnInput('#vehicleState', '.vehicleState_err');
+      hideErrorOnInput('#vehicleRegNo', '.vehicleregno_err');
+      hideErrorOnInput('#chassisNo', '.chassisno_err');
+      hideErrorOnInput('#engineNo', '.engineno_err');
+
+      // step2 form 
+      hideErrorOnInput('#vehicleRegDate', '.vehicleRegDate_err');
+      hideErrorOnInput('#vehicleType', '.vehicleType_err');
+      hideErrorOnInput('#customerName', '.customerName_err');
+      hideErrorOnInput('#mobileNo', '.mobileNo_err');
+      hideErrorOnInput('#emailAddress', '.emailAddress_err');
+      hideErrorOnInput('#billingAddress', '.billingAddress_err');
+      hideErrorOnInput('#pincode', '.pincode_err');
+
+      // step 3 from
+      hideErrorOnInput('#image', '.image_err');
+      hideErrorOnInput('#transactionId', '.transactionId_err');
+
+      // Function to hide error on input or change
+   	function hideErrorOnInput(fieldId, errorClass) {
+         $(fieldId).on('input change', function() {
+               $(errorClass).hide(); // Hide the error message
+         });
+      }
+
+      $('.resetform').on('click', function(e) {
+         $('#customerName').val('');
+         $('#mobileNo').val('');
+         $('#emailAddress').val('');
+         $('#vehicleRegNo').val('');
+         $('#pincode').val('');
+         $('#chassisNo').val('');
+         $('#engineNo').val('');
+         $('#vehicleState').val(null).trigger('change');
+         $('#vehicleType').val('');
+         $('#billingAddress').val('');
+         $('#serviceType').val(1);
+      });
+
+   
+   
+      // Step1 form submit action start
+      $('.step1_btn').on('click', function(e) {
+         e.preventDefault(); // Prevent default form submission
+
+         // Reset error messages
+         let isValid = true;
+         let firstInvalidField = null;
+         $('.error').hide(); // Hide all errors initially
+         $('.formdatas').removeClass('fieldrequired'); // Remove 'fieldrequired' class from all fields initially
+
+         // Fields to validate (Step 1)
+         const step1Fields = [
+            { id: '#customerName', errorClass: '.customerName_err', invalidValue: '' },
+            { id: '#mobileNo', errorClass: '.mobileNo_err', invalidValue: '' },
+            { id: '#emailAddress', errorClass: '.emailAddress_err', invalidValue: '' },
+            { id: '#vehicleRegNo', errorClass: '.vehicleregno_err', invalidValue: '' },
+            { id: '#pincode', errorClass: '.pincode_err', invalidValue: '' },
+            { id: '#chassisNo', errorClass: '.chassisno_err', invalidValue: '' },
+            { id: '#engineNo', errorClass: '.engineno_err', invalidValue: '' },
+            { id: '#vehicleState', errorClass: '.vehicleState_err', invalidValue: '' },
+            { id: '#vehicleType', errorClass: '.vehicleType_err', invalidValue: '' },
+            { id: '#billingAddress', errorClass: '.billingAddress_err', invalidValue: '' }
+         ];
+
+         const mobileNumberRegex = /^[6-9]\d{9}$/;
+         const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+         const nameRegex = /^[a-zA-Z\s]+$/;
+         const pincodeRegex = /^[0-9]{6}$/;
+
+         // Validate each field and display errors (Step 1)
+         $.each(step1Fields, function(index, field) {
+            const fieldValue = $(field.id).val().trim();
+
+            if (field.id === '#mobileNo') {
+               if (fieldValue === field.invalidValue) {
+                  $(field.errorClass).text("Please Enter Mobile Number").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               }else if (!mobileNumberRegex.test(fieldValue)) {
+                  $(field.errorClass).text("Mobile number must start with 6, 7, 8, or 9 and be 10 digits long.").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               } else {
+                  $(field.errorClass).hide();
+                  $(field.id).removeClass('fieldrequired');
+               }
+            } else if (field.id === '#emailAddress') {
+               if (fieldValue === field.invalidValue) {
+                  $(field.errorClass).text("Please Enter Email Address").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               }else if (!emailRegex.test(fieldValue)) {
+                  $(field.errorClass).text("Please enter a valid email address.").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               } else {
+                  $(field.errorClass).hide();
+                  $(field.id).removeClass('fieldrequired');
+               }
+            } else if (field.id === '#pincode') {
+               if (fieldValue === field.invalidValue) {
+                  $(field.errorClass).text("Please Enter Pincode").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               }else if (!pincodeRegex.test(fieldValue)) {
+                  $(field.errorClass).text("Pincode must be exactly 6 digits and number only.").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               } else {
+                  $(field.errorClass).hide();
+                  $(field.id).removeClass('fieldrequired');
+               }
+            } else if (field.id === '#customerName') {
+               if (fieldValue === field.invalidValue) {
+                  $(field.errorClass).text("Please Enter Owner Name").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               }else if (!nameRegex.test(fieldValue)) {
+                  $(field.errorClass).text("Name can only contain letters and spaces.").show();
+                  $(field.id).addClass('fieldrequired');
+                  isValid = false;
+                  if (!firstInvalidField) {
+                     firstInvalidField = $(field.id);
+                  }
+               } else {
+                  $(field.errorClass).hide();
+                  $(field.id).removeClass('fieldrequired');
+               }
+            } else if (fieldValue === field.invalidValue) {
+               $(field.errorClass).show();
+               $(field.id).addClass('fieldrequired');
+               isValid = false;
+               if (!firstInvalidField) {
+                  firstInvalidField = $(field.id);
+               }
+            } else {
+               $(field.errorClass).hide();
+               $(field.id).removeClass('fieldrequired');
+            }
+         });
+
+         // Focus on the first invalid field
+         if (firstInvalidField) {
+            firstInvalidField.focus();
+         }
+
+         // Show next step if all fields are valid
+         if (isValid) {
+            $('.regNo_text').html($('#vehicleRegNo').val());
+            $('.chassisNo_text').html($('#chassisNo').val());
+            $('.engineNo_text').html($('#engineNo').val());
+            $('.vehicleState_text').html($('#vehicleState').val());
+            $('.billingaddress_text').html($('#billingAddress').val());
+            $('.pincode_text').html($('#pincode').val());
+            $('.vehicleType_text').html($('#vehicleType option:selected').text());
+            $('.customerName_text').html($('#customerName').val());
+            $('.mobileNo_text').html($('#mobileNo').val());
+            $('.emailAddress_text').html($('#emailAddress').val());
+
+            $('.main').removeClass('active');
+            $('.step2').addClass('active');
+            $('.progress-bar li').removeClass('active')
+            $('.step1_bar').addClass('active');
+            $('.step2_bar').addClass('active');
+         }
+      });
+      // Step1 form submit action end
+
+      $('.back_step1').on('click', function(e) {
+         $('.main').removeClass('active');
+         $('.step1').addClass('active');
+      });
+
+      $('.back_step3').on('click', function(e) {
+         $('.main').removeClass('active');
+         $('.step2').addClass('active');
+      });
+
+   
+   	// Step2 form submit action start
+      $('.step2_btn').on('click', function(e) {
+         e.preventDefault(); // Prevent default form submission
+         $('.main').removeClass('active');
+         $('.step3').addClass('active');
+         $('.progress-bar li').removeClass('active')
+         $('.step1_bar').addClass('active');
+         $('.step2_bar').addClass('active');
+         $('.step3_bar').addClass('active');
+         var vehicleType = $('#vehicleType').val();
+         $('.qrcode').addClass('d-none');
+         if(vehicleType == 1){ $('.Two_Wheeler').removeClass('d-none'); }
+         if(vehicleType == 2){ $('.Three_Wheeler').removeClass('d-none'); }
+         if(vehicleType == 3){ $('.Four_Wheeler').removeClass('d-none'); }
+         if(vehicleType == 4){ $('.Heavy').removeClass('d-none'); }
+         if(vehicleType == 5){ $('.Electric_Vehicle').removeClass('d-none'); }
+         
+      });
+   	// Step2 form submit action end
+
+      $('#vehicleType').on('change', function(e) {
+         var type = $('#vehicleType option:selected').text();
+         type = type.replace(/ /g, '_');
+         axios.get('/order/vehicleType/amount/'+type,{}, {
+         })
+         .then(function (response) {
+            console.log(response)
+            if (response && response.data && response.data) {
+               const amount = response.data;
+               $('.amountText').html('Rs.'+amount.toFixed(2));
+            }
+         })         
+      });
+      
+
+   	// Step4 Appointment form submit action start
+   	$('.step4_btn').on('click', function(e) {
+         e.preventDefault(); // Prevent default form submission
+        
+         // Reset error messages
+         let isValid = true;
+         let firstInvalidField = null;
+         $('.error').hide(); // Hide all errors initially
+         $('.formdatas').removeClass('fieldrequired'); 
+         
+         // Fields to validate (Step 1)
+         const step1Fields = [
+            { id: '#image', errorClass: '.image_err', invalidValue: '' },
+            { id: '#transactionId', errorClass: '.transactionId_err', invalidValue: '' },
+         ];
+            
+         // Validate each field and display errors (Step 1)
+         $.each(step1Fields, function(index, field) {
+            const fieldValue = $(field.id).val().trim();
+
+            if (fieldValue === field.invalidValue) {
+               $(field.errorClass).show();
+               $(field.id).addClass('fieldrequired');
+               isValid = false;
+               if (!firstInvalidField) {
+                  firstInvalidField = $(field.id);
+               }
+            } else {
+               // Remove class if the field is valid
+               $(field.id).removeClass('fieldrequired');
+            }
+         });
+
+         // Focus on the first invalid field
+         if (firstInvalidField) {
+            firstInvalidField.focus();
+         }
+   
+         // Show next step if all fields are valid
+         if (isValid) {
+            $('.bookingindicator').show()
+            $('.bookingtext').hide()
+
+            $('.regNo_text').html($('#vehicleRegNo').val());
+            $('.chassisNo_text').html($('#chassisNo').val());
+            $('.engineNo_text').html($('#engineNo').val());
+            $('.vehicleState_text').html($('#vehicleState').val());
+            $('.billingaddress_text').html($('#billingAddress').val());
+            $('.pincode_text').html($('#pincode').val());
+            $('.vehicleType_text').html($('#vehicleType option:selected').text());
+            $('.customerName_text').html($('#customerName').val());
+            $('.mobileNo_text').html($('#mobileNo').val());
+            $('.emailAddress_text').html($('#emailAddress').val());
+            
+            const formData = new FormData();
+            var type = $('#vehicleType option:selected').text();
+            type = type.replace(/ /g, '_');
+
+   			formData.append('vehicleState', $('#vehicleState').val());
+   			formData.append('vehicleRegNo', $('#vehicleRegNo').val());
+   			formData.append('chassisNo', $('#chassisNo').val());
+   			formData.append('engineNo', $('#engineNo').val());
+   			formData.append('vehicleType', $('#vehicleType').val());
+   			formData.append('customerName', $('#customerName').val());
+   			formData.append('mobileNo', $('#mobileNo').val());
+   			formData.append('emailAddress', $('#emailAddress').val());
+   			formData.append('billingAddress', $('#billingAddress').val());
+            formData.append('pincode', $('#pincode').val());
+            formData.append('transactionId', $('#transactionId').val());
+            formData.append('vehicleType_text', type);
+            formData.append('serviceType', $('#serviceType').val());
+
+            const imageInput = document.getElementById("image");
+            const image = imageInput.files[0]; 
+            if (image) {
+               formData.append('image', image);
+            }
+   
+   			axios.post('/order/create', formData, {
+   				headers: {
+   					'Content-Type': 'multipart/form-data',
+                  'accept': '*/*'
+   				}
+   			})
+   			.then(response => {
+   
+   				const orderdetail = response.data.data;
+   				
+   				const orderdatetext = new Date(orderdetail.createdAt);
+   				const options = { 
+   					day: 'numeric', 
+   					month: 'short', 
+   					year: 'numeric', 
+   					hour: 'numeric', 
+   					minute: '2-digit', 
+   					second: '2-digit', 
+   					hour12: true 
+   				};
+   				const orderdate = orderdatetext.toLocaleString('en-US', options).replace(',', '');
+   
+   				$('.orderNo_text').html(orderdetail.orderNo);
+               $('.customerName_text').html(orderdetail.customerName);
+               $('.mobileNo_text').html(orderdetail.mobileNo);
+               $('.emailAddress_text').html(orderdetail.emailAddress);
+               $('.orderDate_text').html(orderdate);
+               $('.serviceType_text').html(orderdetail.serviceText);
+               $('.vehicleType_text').html(orderdetail.vehicleTypeText);
+   				$('.amount_text').html("Rs. "+orderdetail.amount);
+   				$('.billingaddress_text').html(orderdetail.billingAddress);
+   				$('.orderStatus_text').html(orderdetail.orderStatusText);
+               $('.trackorderlink').attr("href", '/orderTracking/?o='+btoa(orderdetail.orderNo)+'&v='+btoa(orderdetail.vehicleRegNo))
+               $('.main').removeClass('active');
+               $('.step4').addClass('active');
+               $('.progress-bar li').removeClass('active')
+               $('.step1_bar').addClass('active');
+               $('.step2_bar').addClass('active');
+               $('.step3_bar').addClass('active');
+               $('.step4_bar').addClass('active');
+   				
+               $('.bookingindicator').hide()
+               $('.bookingtext').show()
+
+   			})
+   			.catch(error => {
+               $('.bookingindicator').hide()
+               $('.bookingtext').show()
+   				Swal.fire({ text: error.response.data.message, icon: "error", buttonsStyling: !1, confirmButtonText: "Ok, got it!", customClass: { confirmButton: "btn btn-primary" } });
+   			});
+         
+         }   
+      });
+   	// Step4 Appointment form submit action end
+   
+   	
+   });
+   
+</script>
+<script>
+   $(document).ready(function(){
+     $("#clr1").click(function(){
+   	$(".clr-1").hide();
+   	$(".clr-3").show();
+   	$("#collapseOne").show();
+   	$("#collapseTwo").hide();
+   	$(".clr-2").hide();
+   	$(".clr-4").show();
+     });
+     $("#clr2").click(function(){
+   	$(".clr-4").hide();
+   	$(".clr-2").show();
+   	$("#collapseTwo").show();
+   	$("#collapseOne").hide();
+   	$(".clr-1").show();
+   	$(".clr-3").hide();
+     });
+   });
+</script>
